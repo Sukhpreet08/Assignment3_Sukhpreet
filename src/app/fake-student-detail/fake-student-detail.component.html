@@ -1,0 +1,34 @@
+<div *ngIf="this.studentData">
+  <div class="card p-3 d-flex text-left" style="border-radius: 0px;">
+<div class="d-flex flex-row">
+      <div class="form-group mr-1" style="flex: 1">
+        <label >First name</label>
+        <input disabled type="email" class="form-control" value="{{this.studentData.firstName}}">
+      </div>
+      <div class="form-group mr-1" style="flex: 1">
+        <label >Last name</label>
+        <input disabled type="email" class="form-control" value="{{this.studentData.lastName}}">
+      </div>
+</div>
+    <div class="d-flex flex-row">
+      <div class="form-group mr-1" style="flex: 1">
+        <label >Program Id</label>
+        <input disabled type="email" class="form-control" value="{{this.studentData.programId}}">
+      </div>
+      <div class="form-group mr-1" style="flex: 1">
+        <label >Program year</label>
+        <input disabled type="email" class="form-control" value="{{this.studentData.programYear}}">
+      </div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="form-group mr-1" style="flex: 1">
+        <label >COOP</label>
+        <input disabled type="email" class="form-control" value="{{this.studentData.coop}}">
+      </div>
+      <div class="form-group mr-1" style="flex: 1">
+        <label >Internship</label>
+        <input disabled type="email" class="form-control" value="{{this.studentData.internship}}">
+      </div>
+    </div>
+    </div>
+  </div>

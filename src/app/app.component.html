@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header bg-white">
+      <h1 class="text-center">Assignment 3</h1>
+    </div>
+    <div class="card-body">
+      <div class="d-flex flex-row">
+        <div style="flex: 1">
+          <ul id="names" class="list-group">
+            <li style="cursor: pointer;" class="list-group-item" [routerLink]="['/',n.recordNo]" routerLinkActive="active" *ngFor="let n of fakeStudentsList">{{n.firstName}} {{n.lastName}}</li>
+          </ul>
+        </div>
+        <div style="flex: 3">
+          <div id="details">
+            <!--      <app-fake-student-detail student="studentModel"></app-fake-student-detail>-->
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted bg-white">
+      <h2 class="text-center">Sukhpreet Sukhpreet</h2>
+    </div>
+  </div>
+<!--<header>-->
+
+<!--</header>-->
+
+<!--<footer>-->
+
+<!--</footer>-->
+</div>
